@@ -14,10 +14,12 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    dialog.cpp
+    dialog.cpp \
+    mylistwidget.cpp
 
 HEADERS  += mainwindow.h \
-    dialog.h
+    dialog.h \
+    mylistwidget.h
 
 FORMS    += mainwindow.ui \
     dialog.ui

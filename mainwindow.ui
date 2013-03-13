@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>765</width>
-    <height>463</height>
+    <width>763</width>
+    <height>461</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,9 +21,21 @@
        <number>0</number>
       </property>
       <item>
-       <widget class="QListWidget" name="listWidget">
+       <widget class="MyListWidget" name="listWidget">
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
         <property name="frameShape">
-         <enum>QFrame::Box</enum>
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="dragEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="dragDropMode">
+         <enum>QAbstractItemView::DragDrop</enum>
+        </property>
+        <property name="defaultDropAction">
+         <enum>Qt::MoveAction</enum>
         </property>
         <item>
          <property name="text">
@@ -53,9 +65,21 @@
        </widget>
       </item>
       <item>
-       <widget class="QListWidget" name="listWidget_2">
+       <widget class="MyListWidget" name="listWidget_2">
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
         <property name="frameShape">
-         <enum>QFrame::Box</enum>
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="dragEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="dragDropMode">
+         <enum>QAbstractItemView::DragDrop</enum>
+        </property>
+        <property name="defaultDropAction">
+         <enum>Qt::MoveAction</enum>
         </property>
         <item>
          <property name="text">
@@ -85,9 +109,21 @@
        </widget>
       </item>
       <item>
-       <widget class="QListWidget" name="listWidget_3">
+       <widget class="MyListWidget" name="listWidget_3">
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
         <property name="frameShape">
-         <enum>QFrame::Box</enum>
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="dragEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="dragDropMode">
+         <enum>QAbstractItemView::DragDrop</enum>
+        </property>
+        <property name="defaultDropAction">
+         <enum>Qt::MoveAction</enum>
         </property>
         <item>
          <property name="text">
@@ -117,9 +153,21 @@
        </widget>
       </item>
       <item>
-       <widget class="QListWidget" name="listWidget_4">
+       <widget class="MyListWidget" name="listWidget_4">
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
         <property name="frameShape">
-         <enum>QFrame::Box</enum>
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="dragEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="dragDropMode">
+         <enum>QAbstractItemView::DragDrop</enum>
+        </property>
+        <property name="defaultDropAction">
+         <enum>Qt::MoveAction</enum>
         </property>
         <item>
          <property name="text">
@@ -149,9 +197,21 @@
        </widget>
       </item>
       <item>
-       <widget class="QListWidget" name="listWidget_5">
+       <widget class="MyListWidget" name="listWidget_5">
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
         <property name="frameShape">
-         <enum>QFrame::Box</enum>
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="dragEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="dragDropMode">
+         <enum>QAbstractItemView::DragDrop</enum>
+        </property>
+        <property name="defaultDropAction">
+         <enum>Qt::MoveAction</enum>
         </property>
         <item>
          <property name="text">
@@ -189,7 +249,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>765</width>
+     <width>763</width>
      <height>24</height>
     </rect>
    </property>
@@ -199,12 +259,19 @@
     <enum>TopToolBarArea</enum>
    </attribute>
    <attribute name="toolBarBreak">
-    <bool>true</bool>
+    <bool>false</bool>
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>MyListWidget</class>
+   <extends>QListWidget</extends>
+   <header>mylistwidget.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
