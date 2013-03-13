@@ -2,6 +2,7 @@
 #define DIALOG_H
 
 #include <QDialog>
+#include <QListWidget>
 
 namespace Ui {
 class Dialog;
@@ -14,9 +15,15 @@ class Dialog : public QDialog
 public:
     explicit Dialog(QWidget *parent = 0);
     ~Dialog();
+
+    void addWidget(QListWidget* list);
     
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::Dialog *ui;
+    QListWidget* model;
 };
 
 #endif // DIALOG_H

@@ -20,6 +20,7 @@ void MainWindow::on_listWidget_clicked(const QModelIndex &index)
 {
     if (index.isValid() && index.data().toString() == "New") {
         Dialog* dialog = new Dialog(this);
+        dialog->addWidget(ui->listWidget);
         dialog->show();
     }
 }
