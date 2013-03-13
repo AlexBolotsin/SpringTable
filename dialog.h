@@ -17,9 +17,9 @@ public:
     ~Dialog();
 
     void addWidget(QListWidget* list);
-    
+
 private slots:
-    void on_pushButton_clicked();
+    void Dialog_accepted();
 
 private:
     Ui::Dialog *ui;

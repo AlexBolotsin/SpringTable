@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QTableWidget>
+#include <QListWidgetItem>
 
 namespace Ui {
 class MainWindow;
@@ -17,13 +17,12 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_listWidget_doubleClicked(const QModelIndex &index);
-
     void on_listWidget_clicked(const QModelIndex &index);
+
+    void on_listWidget_itemClicked(QListWidgetItem *item);
 
 private:
     Ui::MainWindow *ui;
-    QTableWidget* table;
 };
 
 #endif // MAINWINDOW_H

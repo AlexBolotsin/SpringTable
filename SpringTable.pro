@@ -15,11 +15,14 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     dialog.cpp \
-    mylistwidget.cpp
+    mylistwidget.cpp \
+    showtaskdialog.cpp
 
 HEADERS  += mainwindow.h \
     dialog.h \
-    mylistwidget.h
+    mylistwidget.h \
+    showtaskdialog.h
 
 FORMS    += mainwindow.ui \
-    dialog.ui
+    dialog.ui \
+    showtaskdialog.ui

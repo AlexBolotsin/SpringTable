@@ -7,6 +7,7 @@ Dialog::Dialog(QWidget *parent) :
     ui(new Ui::Dialog)
 {
     ui->setupUi(this);
+    connect(ui->buttonBox, SIGNAL(accepted()), this, SLOT(Dialog_accepted()));
 }
 
 Dialog::~Dialog()
@@ -18,9 +19,10 @@ void Dialog::addWidget(QListWidget* model) {
     this->model = model;
 }
 
-void Dialog::on_pushButton_clicked()
+void Dialog::Dialog_accepted()
 {
     QTextEdit* text = ui->textEdit;
     if (text)
         model->addItem(new QListWidgetItem(text->toPlainText()));
+    Dialog::accept();
 }
